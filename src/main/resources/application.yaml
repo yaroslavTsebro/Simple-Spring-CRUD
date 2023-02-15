@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: record crud
+  datasource:
+    url: jdbc:postgresql://localhost:5432/record
+    username: postgres
+    password: zsbldqpk56
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: classpath:db/changeLog-master.xml
+    enabled: false
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+logging:
+  charset:
+    console: UTF-8
