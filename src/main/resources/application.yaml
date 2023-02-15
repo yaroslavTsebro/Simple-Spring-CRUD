@@ -15,7 +15,6 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: create
-    show-sql: true
 logging:
   charset:
     console: UTF-8
