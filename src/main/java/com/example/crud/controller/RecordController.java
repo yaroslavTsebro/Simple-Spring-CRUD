@@ -2,7 +2,7 @@ package com.example.crud.controller;
 
 import com.example.crud.dto.CreateRecordDTO;
 import com.example.crud.dto.UpdateRecordDTO;
-import com.example.crud.model.Record;
+import com.example.crud.entity.Record;
 import com.example.crud.service.RecordService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

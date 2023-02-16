@@ -4,8 +4,8 @@ import com.example.crud.dto.CreateRecordDTO;
 import com.example.crud.dto.UpdateRecordDTO;
 import com.example.crud.exception.ResourceNotFoundException;
 import com.example.crud.mapper.RecordMapper;
-import com.example.crud.model.Record;
-import com.example.crud.repo.RecordRepo;
+import com.example.crud.entity.Record;
+import com.example.crud.repository.RecordRepository;
 import com.example.crud.service.RecordService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
@@ -20,7 +20,7 @@ import java.util.Optional;
 @Slf4j
 @Service
 public class RecordServiceImp implements RecordService {
-    private final RecordRepo recordRepo;
+    private final RecordRepository recordRepo;
     private final RecordMapper recordMapper;
 
     @Override
