@@ -7,7 +7,7 @@ import org.mapstruct.Mapper;
 
 @Mapper
 public interface RecordMapper {
-    Record toCreateRecord(CreateRecordDTO createProjectDTO);
+    Record toCreateRecord(CreateRecordDTO createRecordDTO);
 
     Record toUpdateRecord(UpdateRecordDTO updateRecordDTO);
 }
